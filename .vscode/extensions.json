@@ -9,6 +9,12 @@
     "yzhang.markdown-all-in-one",
 
     // Image-pasting for markdown
-    "mushan.vscode-paste-image"
+    "mushan.vscode-paste-image",
+
+    // Excalidraw extension for pretty visuals
+    "pomdtr.excalidraw-editor",
+
+    // Support for .editorconfig
+    "editorconfig.editorconfig"
   ]
 }
