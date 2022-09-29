@@ -1,8 +1,9 @@
 # Todo
 
-You can create todos in Foam.
-
-- [x] This is an example of a todo list item that's complete
-- [ ] This one is not completed yet
-- [ ] You can mark it completed by pressing `Option`+`C` (or `Alt`+`C`) when your cursor is on this line
-  - [ ] You can also select multiple lines and mark them all at once!
+- [ ] Write about the principles behind object-oriented design
+- [ ] Write about how object-oriented design gave rise to SOLID principles
+- [ ] Write about the SOLID principles
+- [ ] Write about how object-oriented design influences testable code
+- [ ] Write about how Spring complements object-oriented design
+- [ ] Write about testing
+- [ ] Figure out how to publish this on GitHub pages
