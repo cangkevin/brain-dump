@@ -15,6 +15,9 @@
     "pomdtr.excalidraw-editor",
 
     // Support for .editorconfig
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+
+    // Spell checking
+    "streetsidesoftware.code-spell-checker"
   ]
 }
