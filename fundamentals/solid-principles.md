@@ -1,0 +1,81 @@
+---
+type: fundamentals
+tags: fundamentals SOLID object-oriented single-responsibility-principle open-closed-principle liskov-substitution-principle interface-segregation-principle dependency-inversion-principle
+---
+
+# SOLID principles
+
+The SOLID principles are a set of principles that are built on top of [[object-oriented-design]]. These principles are meant to take advantage of the polymorphism aspect of object-oriented (OO) languages to guide OO designs to be more maintainable and flexible.
+
+The five principles are:
+- **S**ingle responsibility principle
+- **O**pen-closed principle
+- **L**iskov substitution principle
+- **I**nterface segregation principle
+- **D**ependency inversion principle
+
+## Single responsibility principle
+
+[[single-responsibility-principle]]
+
+This principle simply states that a class should only have one reason to change. This does not mean that a class should only have one function. Things that can change for significantly different reasons at different times is a litmus test for determining if a class has too many responsibilities.
+
+Having a class that's focused on a single responsibility makes that class more robust. It is more understandable and maintainable as there is only one responsibility for developers to understand as they grok through the code and understand its specific role that it serves.
+
+## Open-closed principle
+
+[[open-closed-principle]]
+
+This principle states that a class/module should be open for extension but closed for modification. This means that a class/module allows for it's behavior to be extended without having to modify the source code.
+
+Polymorphism provides the mechanism that enables this. With the use of an abstract base class (or an interface in the Java world) and implementing subclasses, polymorphic substitution enables behavior to be extended/modified without having to modify the original source that interacts with just the abstract base class/interface itself.
+
+Adherence to this principle means that when you add a feature, you can simply do so by adding new code and not needing to modify any existing code.
+
+## Liskov substitution principle
+
+[[liskov-substitution-principle]]
+
+This principle states that a derived class must be usable through it's base class interface without the need for the user to know the difference.
+
+Once again, this is basic polymorphism. Implementing subclasses can be swapped in and out as needed and users would not know any better. This allows the flexibility for lower-level details to change without having it in advertently affect high-level policies (e.g. switching relational database technologies without needing to change application code)
+
+## Interface segregation principle
+
+[[interface-segregation-principle]]
+
+This principle states that clients should not be forced to depend on interfaces that they do not use.
+
+Interfaces provide an abstraction layer that simplifies code and prevent coupling to dependencies. This can be simply thought of as the single responsibility principle for interfaces. Interfaces should not be "fat" but rather smaller with well-established intent. This allows clients of the interface to only be exposed to methods that are necessary for them.
+
+## Dependency inversion principle
+
+[[dependency-inversion-principle]]
+
+This principle states two things:
+
+1. High-level modules shouldn't depend on low-level modules. Both should depend on abstractions
+2. Abstractions should not depend on details. Details (concrete implementation) should depend on abstractions
+
+This inverts the dependency, as shown in [[object-oriented-design#How does polymorphism help?]]. This allows for loose coupling between the modules.
+
+## References
+- Robert "Uncle Bob" Martin's talk about object-oriented design and SOLID principles
+  - https://www.youtube.com/watch?v=QHnLmvDxGTY
+- Wiki page on SOLID principles
+  - https://en.wikipedia.org/wiki/SOLID
+- Wiki page on Single responsibility principle
+  - https://en.wikipedia.org/wiki/Single-responsibility_principle
+- Robert Martin's blog post on clarifying Single responsibility principle
+  - https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html
+- Wiki page on the Open-closed principle
+  - https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
+- Wiki page on the Liskov substitution principle
+  - https://en.wikipedia.org/wiki/Liskov_substitution_principle
+- Wiki page on Interface segregation principle
+  - https://en.wikipedia.org/wiki/Interface_segregation_principle
+- Robert Martin's article on Interface segregation principle
+  - https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view?resourcekey=0-3H2Ld4l-dIZZVRmHSpNLcA
+- Wiki page on Dependency inversion principle
+  - https://en.wikipedia.org/wiki/Dependency_inversion_principle
+

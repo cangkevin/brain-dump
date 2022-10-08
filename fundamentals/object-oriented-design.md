@@ -5,7 +5,7 @@ tags: fundamentals object-oriented
 
 # Object-oriented Design
 
-This post is intended to be a detailed summary of the principles behind object-oriented design which serves as the foundation for the [[SOLID principles]]. This specific explanation of the topic helps in unlocking higher understanding of why object-oriented design is such an important thing when designing software.
+This post is intended to be a detailed summary of the principles behind object-oriented design which serves as the foundation for the [[solid-principles]]. This specific explanation of the topic helps in unlocking higher understanding of why object-oriented design is such an important thing when designing software.
 
 ## Perpetual inexperience in the industry
 
