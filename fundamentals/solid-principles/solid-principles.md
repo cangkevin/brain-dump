@@ -8,6 +8,7 @@ tags: fundamentals SOLID object-oriented single-responsibility-principle open-cl
 The SOLID principles are a set of principles that are built on top of [[object-oriented-design]]. These principles are meant to take advantage of the polymorphism aspect of object-oriented (OO) languages to guide OO designs to be more maintainable and flexible.
 
 The five principles are:
+
 - **S**ingle responsibility principle
 - **O**pen-closed principle
 - **L**iskov substitution principle
@@ -60,22 +61,22 @@ This principle states two things:
 This inverts the dependency, as shown in [[object-oriented-design#How does polymorphism help?]]. This allows for loose coupling between the modules.
 
 ## References
-- Robert "Uncle Bob" Martin's talk about object-oriented design and SOLID principles
-  - https://www.youtube.com/watch?v=QHnLmvDxGTY
-- Wiki page on SOLID principles
-  - https://en.wikipedia.org/wiki/SOLID
-- Wiki page on Single responsibility principle
-  - https://en.wikipedia.org/wiki/Single-responsibility_principle
-- Robert Martin's blog post on clarifying Single responsibility principle
-  - https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html
-- Wiki page on the Open-closed principle
-  - https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
-- Wiki page on the Liskov substitution principle
-  - https://en.wikipedia.org/wiki/Liskov_substitution_principle
-- Wiki page on Interface segregation principle
-  - https://en.wikipedia.org/wiki/Interface_segregation_principle
-- Robert Martin's article on Interface segregation principle
-  - https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view?resourcekey=0-3H2Ld4l-dIZZVRmHSpNLcA
-- Wiki page on Dependency inversion principle
-  - https://en.wikipedia.org/wiki/Dependency_inversion_principle
 
+- Robert "Uncle Bob" Martin's talk about object-oriented design and SOLID principles
+  - <https://www.youtube.com/watch?v=QHnLmvDxGTY>
+- Wiki page on SOLID principles
+  - <https://en.wikipedia.org/wiki/SOLID>
+- Wiki page on Single responsibility principle
+  - <https://en.wikipedia.org/wiki/Single-responsibility_principle>
+- Robert Martin's blog post on clarifying Single responsibility principle
+  - <https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html>
+- Wiki page on the Open-closed principle
+  - <https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle>
+- Wiki page on the Liskov substitution principle
+  - <https://en.wikipedia.org/wiki/Liskov_substitution_principle>
+- Wiki page on Interface segregation principle
+  - <https://en.wikipedia.org/wiki/Interface_segregation_principle>
+- Robert Martin's article on Interface segregation principle
+  - <https://drive.google.com/file/d/0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi/view?resourcekey=0-3H2Ld4l-dIZZVRmHSpNLcA>
+- Wiki page on Dependency inversion principle
+  - <https://en.wikipedia.org/wiki/Dependency_inversion_principle>

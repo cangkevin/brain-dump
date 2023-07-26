@@ -2,8 +2,22 @@
 type: fundamentals
 tags: fundamentals object-oriented
 ---
-
+<!-- omit in toc -->
 # Object-oriented Design
+
+- [Perpetual inexperience in the industry](#perpetual-inexperience-in-the-industry)
+- [Symptoms of bad code](#symptoms-of-bad-code)
+  - [Rigidity](#rigidity)
+  - [Fragility](#fragility)
+  - [Non-reusability](#non-reusability)
+- [The common trait of the symptoms](#the-common-trait-of-the-symptoms)
+- [Flow of control and compile-time dependency](#flow-of-control-and-compile-time-dependency)
+- [Object-oriented (OO) languages](#object-oriented-oo-languages)
+  - [Encapsulation](#encapsulation)
+  - [Inheritance](#inheritance)
+  - [Polymorphism](#polymorphism)
+- [How does polymorphism help?](#how-does-polymorphism-help)
+- [References](#references)
 
 This post is intended to be a detailed summary of the principles behind object-oriented design which serves as the foundation for the [[solid-principles]]. This specific explanation of the topic helps in unlocking higher understanding of why object-oriented design is such an important thing when designing software.
 
@@ -20,6 +34,7 @@ Martin poses the question:
 > What are the symptoms of bad software?
 
 There are 3 symptoms of bad software:
+
 1. [Rigidity](#rigidity)
 2. [Fragility](#fragility)
 3. [Non-reusability](#non-reusability)
@@ -51,6 +66,7 @@ Martin illustrates the concept of flow of control and compile-time dependency wi
 ![Simple flow of control and compile time diagram](assets/flow_control_compile_dep.excalidraw.svg)
 
 If you have two modules `M` and `N` and `M` calls a function `f` that lives in `N`, the following can be said:
+
 - The flow of control goes from `M` to `N` i.e. the run-time behavior.
 - `M` depends on `N` i.e. the compile-time behavior.
 
@@ -65,6 +81,7 @@ A typical function call tree starts with a top-level module i.e. `main` and then
 In conclusion, higher-level modules know about lower-level modules. However, having higher-level modules know about lower-level modules violates [[inversion of control]]. Martin ties this pitfall as a primary reason of what makes code difficult to understand; he alludes that high-level modules knowing about lower-level modules leads to intermingling of details at various abstraction levels which makes it difficult to understand what's really happening at a high-level policy. Additionally, if there's ever a change that occurs at a low-level module, that module and everything that depends on it will need to be recompiled and redeployed. Martin argues that high-level policy should be immune from implementation details.
 
 Linking it back to the symptoms of bad code:
+
 - Rigidity happens when there's coupling down towards implementation details.
 - Fragility happens when a change happens in a lower-level module that potentially breaks things in a high-level policy.
 - Non-reusability happens when high-level policies are tightly coupled towards undesirable lower-level details.
@@ -164,6 +181,7 @@ void copy() {
 ```
 
 Two things to note:
+
 - `getchar()` reads a character from STDIN
 - `putchar(c)` writes a character to STDOUT
 
@@ -172,6 +190,7 @@ The UNIX copy program simply reads from STDIN and writes to STDOUT. In UNIX-base
 How is this polymorphism implemented? It turns out it's done in the following way.
 
 Every I/O driver written in C needs to have 5 functions with well-established signatures implemented:
+
 - `read()`
 - `write()`
 - `open()`
@@ -206,9 +225,10 @@ The key takeaway is this:
 > Object-oriented design is about managing dependencies; by selectively inverting key dependencies within your architecture, you can avoid rigidity, fragility, and non-reusability.
 
 ## References
+
 - Robert "Uncle Bob" Martin's talk about [[solid-principles]]
-  - https://www.youtube.com/watch?v=QHnLmvDxGTY
+  - <https://www.youtube.com/watch?v=QHnLmvDxGTY>
 - Modeling inheritance in C
-  - https://stackoverflow.com/a/1249571
+  - <https://stackoverflow.com/a/1249571>
 - Virtual tables in C++
-  - https://pabloariasal.github.io/2017/06/10/understanding-virtual-tables/
+  - <https://pabloariasal.github.io/2017/06/10/understanding-virtual-tables/>

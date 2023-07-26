@@ -64,5 +64,6 @@ public class Ostrich extends Bird {}
 This satisfies the LSP since there are no concerns about the substitutability when looking through the base class of `Bird` or `FlyingBird`. `Duck` and `Ostrich` inherits from the proper parent type which satisfies the behavioral expectations.
 
 ## References
+
 - SO discussion on examples of LSP
-  - https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle
+  - <https://stackoverflow.com/questions/56860/what-is-an-example-of-the-liskov-substitution-principle>

@@ -16,6 +16,7 @@ Rather, it's better to think about the role that a class serves in the context o
 ## Example
 
 Imagine that we have a class like the following:
+
 ```java
 public class Invoice {
   public InvoiceDto parseInvoiceDocument(InputStream inputStream) {...}
@@ -25,11 +26,13 @@ public class Invoice {
 ```
 
 `Invoice` is a class that:
+
 - Takes as input an invoice file from a seller and parses it into an in-memory representation
 - Saves the content of the invoice to a database
 - Transforms and writes out the invoice data into a different format to be used internally
 
 Imagine that there were changes requested that puts this class under scope of those requests. What kind of changes can happen?
+
 - The input invoice file could be changed in that information could be added, removed, renamed, etc.
 - Saving the invoice data to a database could be changed in that the database technologies could change or there is a need to change the table schema
 - The internal format that the invoice data is transformed to could be changed in that users could request modifications to what information gets written out and how

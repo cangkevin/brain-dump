@@ -18,6 +18,7 @@ The core idea is that it should be easy to extend the behavior of an existing mo
 Polymorphic open-closed principle is the preferred approach.
 
 Imagine that we had the following example:
+
 ```java
 public class SimplePrinter {
   void print(String content) {
@@ -44,6 +45,7 @@ There is a `SimplePrinter` class which exposes a `print()` function for printing
 Imagine in the future that there might new printer machines coming into the picture. Ideally, the same content can be printed on various kinds of new printer machines. However, with the current implementation, switching to another printer involves having to change the code in `ReportProcessor`.
 
 A different design that adheres to the open-closed principle would be to extract a `Printer` interface and then have various types of printer machines implement this interface:
+
 ```java
 public interface Printer {
   void print(String content);
@@ -69,6 +71,7 @@ public class InkjetPrinter implements Printer {
 ```
 
 Clients of various `Printer`s will work with the interface rather that an implementation of it:
+
 ```java
 public class ReportProcessor {
   private Printer printer;

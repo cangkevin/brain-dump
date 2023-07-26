@@ -4,11 +4,16 @@
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
   "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
     "editor.quickSuggestions": {
         "comments": "on",
         "strings": "on",
         "other": "on"
     }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
