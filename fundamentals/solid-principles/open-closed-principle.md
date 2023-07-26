@@ -9,7 +9,7 @@ The open-closed principle is the second letter of the SOLID principles.
 
 ## Meaning
 
-Robert "Uncle Bob" Martin cites Bertrand Meyer's definition for the open-closed principle. To paraphrase it: "a module should be open for extension but closed for modification".
+Robert Martin cites Bertrand Meyer's definition for the open-closed principle. To paraphrase it: "a module should be open for extension but closed for modification".
 
 The core idea is that it should be easy to extend the behavior of an existing module without having to modify it's source code. Having to modify the source code to change behavior means recompilation and redeployment of the changes, which is an indication of rigidity.
 

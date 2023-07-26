@@ -9,9 +9,9 @@ The single responsibility principle is the first letter of the SOLID principles.
 
 ## Meaning
 
-Robert "Uncle Bob" Martin simply states this as "a class should have only one reason to change". However, the term "reason" is a bit ambiguous.
+Robert Martin simply states this as "a class should have only one reason to change". However, the term "reason" is a bit ambiguous.
 
-Rather, it's better to think about the role that a class serves in the context of what it does for the business or product. If a class is responsibility for more than one role and those roles do not intersect in any meaningful or logical way, then there is a possibility that it can change for more than one reason. Hence, this is a violation of the single responsibility principle.
+Rather, it's better to think about the role that a class serves in the context of what it does for the business or product. If a class is responsible for more than one role and those roles do not intersect in any meaningful or logical way, then it is very likely it can change for more than one reason. Hence, this is a violation of the single responsibility principle.
 
 ## Example
 
