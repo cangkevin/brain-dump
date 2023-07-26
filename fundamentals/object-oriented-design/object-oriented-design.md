@@ -48,7 +48,7 @@ How do we accomplish that?
 
 Martin illustrates the concept of flow of control and compile-time dependency with a simple diagram between two modules:
 
-![Simple flow of control and compile time diagram](../attachments/fundamentals/object-oriented-design/flow_control_compile_dep_diagram.png)
+![Simple flow of control and compile time diagram](assets/flow_control_compile_dep.excalidraw.svg)
 
 If you have two modules `M` and `N` and `M` calls a function `f` that lives in `N`, the following can be said:
 - The flow of control goes from `M` to `N` i.e. the run-time behavior.
@@ -58,7 +58,7 @@ This is a universal truth in languages such as C, which is a **not** an object-o
 
 Expanding the above example to a more realistic example, a function call tree of an application:
 
-![Flow of control and compile time dependency on an application function call tree](../attachments/fundamentals/object-oriented-design/flow_control_compile_dep_func_tree.png)
+![Flow of control and compile time dependency on an application function call tree](assets/flow_control_compile_dep_func_tree.excalidraw.svg)
 
 A typical function call tree starts with a top-level module i.e. `main` and then proceeds with calling progressively lower-level modules. In the above diagram, it's illustrated going from high-level (`HL`) to mid-level (`ML`) to terminal low-level (`LL`) modules).
 
@@ -182,7 +182,7 @@ The operating system would store pointers to these functions in a table. Anytime
 
 Roughly illustrating what this looks like:
 
-![Implementation of Polymorphism in C](../attachments/fundamentals/object-oriented-design/polymorphism_in_c.png)
+![Implementation of Polymorphism in C](assets/polymorphism_in_c.excalidraw.svg)
 
 Polymorphism in this manner wasn't done much in C due to how dangerous it was. It relied on creating and loading a table of function pointers and everyone had to be a good citizen and call functions through this table. Anyone that violated those rules would mean a huge problem. However, the critical flaw was there was no way to enforce this behavior in the language itself. This is one of the primary reasons why C is not considered an OO language.
 
@@ -192,13 +192,13 @@ With OO languages, polymorphism came out of the box and it became very cheap, ea
 
 With polymorphism, the [diagram](#flow-of-control-and-compile-time-dependency) of a module calling another module can now be changed to the following:
 
-![Polymorphism with flow of control and compile time dependency diagram](../attachments/fundamentals/object-oriented-design/polymorphism_flow_control_compile_dep.png)
+![Polymorphism with flow of control and compile time dependency diagram](assets/polymorphism_flow_control_compile_dep.excalidraw.svg)
 
 Rather than having module `M` call the lower-level module `N` directly, we can have an interface `I` that declares the function `f`. Module `M` calls the function `f` on the interface and module `N` derives from the interface and implements `f`. The flow of control still goes from `M` to `N` but now the compile-time dependency goes against the flow of control. This is what polymorphism enables. **It gives the ability to invert the compile-time dependency while still preserving the flow of control**.
 
 Going back to the application function call tree, this means we can take any of the red arrows and invert them as needed:
 
-![Polymorphism in application function call tree](../attachments/fundamentals/object-oriented-design/polymorphism_flow_control_compile_dep_func_tree.png)
+![Polymorphism in application function call tree](assets/polymorphism_flow_control_compile_dep_func_tree.excalidraw.svg)
 
 Having this power means we can **control the dependencies** within the architecture of our application. We now have the ability to avoid the symptoms of bad code.
 
