@@ -1,6 +1,6 @@
 ---
 type: fundamentals
-tags: fundamentals SOLID object-oriented single-responsibility-principle open-closed-principle liskov-substitution-principle interface-segregation-principle dependency-inversion-principle
+tags: object-oriented-design SOLID
 ---
 
 # SOLID principles

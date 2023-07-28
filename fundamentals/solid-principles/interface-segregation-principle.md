@@ -1,6 +1,6 @@
 ---
 type: fundamentals
-tags: fundamentals interface-segregation-principle
+tags: SOLID
 ---
 
 # Interface segregation principle

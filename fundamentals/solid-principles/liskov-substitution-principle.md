@@ -1,6 +1,6 @@
 ---
 type: fundamentals
-tags: fundamentals liskov-substitution-principle
+tags: SOLID
 ---
 
 # Liskov substitution principle

@@ -1,6 +1,6 @@
 ---
 type: fundamentals
-tags: fundamentals open-closed-principle
+tags: SOLID
 ---
 
 # Open-closed principle

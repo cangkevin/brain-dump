@@ -1,6 +1,6 @@
 ---
 type: fundamentals
-tags: fundamentals dependency-inversion-principle
+tags: SOLID
 ---
 
 # Dependency inversion principle

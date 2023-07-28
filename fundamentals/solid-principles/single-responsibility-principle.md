@@ -1,6 +1,6 @@
 ---
 type: fundamentals
-tags: fundamentals single-responsibility-principle
+tags: SOLID
 ---
 
 # Single responsibility principle

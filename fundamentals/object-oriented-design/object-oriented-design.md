@@ -1,6 +1,6 @@
 ---
 type: fundamentals
-tags: fundamentals object-oriented
+tags: object-oriented-design
 ---
 <!-- omit in toc -->
 # Object-oriented Design
