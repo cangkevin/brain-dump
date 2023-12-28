@@ -6,14 +6,14 @@
   "[markdown]": {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    },
     "editor.quickSuggestions": {
-        "comments": "on",
-        "strings": "on",
-        "other": "on"
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
     }
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": true
   },
   "files.defaultLanguage": "markdown",
   "files.exclude": {
@@ -31,4 +31,6 @@
   "pasteImage.path": "${projectRoot}/attachments",
   "pasteImage.showFilePathConfirmInputBox": true,
   "prettier.singleQuote": false,
+  "spellright.language": ["en-US"],
+  "spellright.documentTypes": ["markdown"]
 }
